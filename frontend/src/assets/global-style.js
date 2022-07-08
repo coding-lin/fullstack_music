@@ -5,6 +5,7 @@ export default {
   "font-color": "#111111",
   "font-color-light": "#f1f1f1",
   "font-color-desc": "#2E30e0",
+  "font-color-desc-v2": "rgba(228, 228, 228, 0.1)",
   "font-size-s": "12px",
   "font-size-m": "14px",
   "background-color": "#f2f3f4",
