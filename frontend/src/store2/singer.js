@@ -1,16 +1,11 @@
 const defaultState = {
-  singers: []
+    singers: [
+        {id:1, name: '王力宏'}, 
+        {id:2, name: '周比畅'}, 
+    ]
 }
-
-const reducer = (state=defaultState, action) => {
-  switch(action.type) {
-    case 'CHANGE_SINGERLIST':
-      return {
-        ...state,
-        singers: action.data
-      }
-  }
-  return state
+const reducer = (state=defaultState) => {
+    return state
 }
 
 export default reducer

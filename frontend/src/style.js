@@ -1,6 +1,7 @@
-// styled-components
-// 样式组件 样式带来变量
-import styled, { createGlobalStyle } from 'styled-components'
+// styled-components 
+// 样式组件？ 样式带来变量， 嵌套等高级功能， 
+// 以组件的形式返回， 声明式的css组件
+import styled, { createGlobalStyle }  from 'styled-components'
 import style from '@/assets/global-style'
 
 export const GlobalStyle = createGlobalStyle`
@@ -55,21 +56,20 @@ html, body, div, span, applet, object, iframe,
     color: #fff;
   }
 `
-
 export const Top = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0.25rem 0.5rem;
-  background: ${style["theme-color"]};
-  & > span {
-    line-height: 2rem;
-    color: #f1f1f1;
-    font-size: 1rem;
-    &.iconfont {
-      font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.25rem 0.5rem;
+    background: ${style["theme-color"]};
+    & > span {
+        line-height: 2rem;
+        color: #f1f1f1;
+        font-size: 1rem;
+        &.iconfont {
+            font-size: 25px;
+        }
     }
-  }
 `
 
 export const Tab = styled.div`
@@ -92,7 +92,7 @@ export const Tab = styled.div`
       }
     }
   }
-`
+`;
 
 export const TabItem = styled.div`
   height: 100%;
@@ -100,4 +100,4 @@ export const TabItem = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-`
+`;
