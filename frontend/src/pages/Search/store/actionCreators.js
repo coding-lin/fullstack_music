@@ -35,3 +35,15 @@ export const getHotKeywords = () => {
       })
   }
 }
+
+export const getSuggestList = (query) => {
+  return dispatch => {
+    getSuggestListRequest(query)
+      .then(data => {
+        if (!data) return;
+        let res = data.result || [];
+        dispatch(changeSuggestList(res))
+        dispatch(changeEnterLoading(false))
+      })
+  }
+}
