@@ -1,0 +1,13 @@
+// 模块化能力 路由模块基本就是数据模块
+import { combineReducers } from "redux";
+// store 中央
+// 每个 reducer 就是地方
+import { reducer as recommendReducer } from '@/pages/Recommend/store/index';
+import { reducer as playerReducer } from '@/pages/Player/store/index'
+import { reducer as SearchReducer } from "@/pages/Search/store/index";
+
+export default combineReducers({
+  recommend: recommendReducer,
+  player: playerReducer,
+  search: SearchReducer
+})
