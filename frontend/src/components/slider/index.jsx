@@ -4,6 +4,7 @@ import { SliderContainer  } from './style'
 
 function Slider ({ bannerList }) {
     const [sliderSwiper, setSliderSwiper] = useState(null)
+    
     useEffect(() => {
         if (bannerList.length && !sliderSwiper) {
             let sliderSwiper = new Swiper(".slider-container", {
@@ -17,7 +18,7 @@ function Slider ({ bannerList }) {
             setSliderSwiper(sliderSwiper)
         }
     }, [bannerList.length, sliderSwiper])
-    console.log(bannerList, '///////')
+
     return (
         <SliderContainer>
             <div className="before"></div>
